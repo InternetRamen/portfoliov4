@@ -1,74 +1,114 @@
 .main {
     height: 100vh;
     padding: 100px 20%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    justify-items: center;
-    h1 {
-        color:white;
-        font-size: 100px;
-        font-weight: 300;
-        transform: translateX(0);
-        transition:  transform 1s ease, opacity 1s ease;
-        opacity: 100%;
-        justify-self: flex-start;
-        
-    }
-    .subtitle {
-            color:white;
-            font-size: 30px;
-            font-weight: 300;
-            transform: translateX(0);
-            transition:  transform 1s ease, opacity 1s ease;
-            opacity: 100%;
-            
-    }
-    ul {
-        align-self: flex-end;
-        width: 700px;
+    
+    
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         overflow: hidden;
-        list-style: none;
-        li {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            transition: padding 0.4s ease,  transform 1s ease, opacity 1s ease;
-            padding-right: 40px;
-            opacity: 100%;
-            transform: translateX(0);
-            i {
-                padding-left: 40px;
-                font-size: 75px;
-               
-                color: white;
+        justify-content: center;
+        .maintop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            h1 {
+                color:white;
+                font-size: 100px;
+                font-weight: 300;
+                transform: translateX(0);
+                transition:  transform 1s ease, opacity 1s ease;
+                opacity: 100%;
+                
+                @media screen and (max-width: 795px) {
+                    font-size: 50px;
+                }
             }
-            a {
-                text-decoration: none;
-                color:#9e9e9e;
-                transition: color 0.4s ease 0.1s;
-                font-weight: 100;
-                font-size: 75px;
+            .subtitle {
+                    color:white;
+                    font-size: 30px;
+                    font-weight: 300;
+                    transform: translateX(0);
+                    transition:  transform 1s ease, opacity 1s ease;
+                    opacity: 100%;
+                    @media screen and (max-width: 795px) {
+                        font-size: 25px;
+                    }
             }
+             .slide-right {
+                opacity: 0;
+                transform: translateX(100%);
             
-        }
-        li:hover {
-            padding: 0;
-            a {
-                color: white;
-                transition: color 0.4s ease;
             }
-            transition: padding 0.4s ease;
         }
-        .slide-in {
-            opacity: 0;
-            transform: translateX(-100%);
-           
+        
+        ul {
+            align-self: flex-end;
+            width: 700px;
+            overflow: hidden;
+            list-style: none;
+            
+            @media screen and (max-width: 795px) {
+                width: 70%;
+            }
+            @media screen and (max-width: 425px) {
+                    width: 100%; 
+                        
+            }
+            li {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                transition: padding 0.4s ease,  transform 1s ease, opacity 1s ease;
+                padding-right: 40px;
+                opacity: 100%;
+                transform: translateX(0);
+                i {
+                    padding-left: 40px;
+                    font-size: 75px;
+                    @media screen and (max-width: 795px) {
+                        font-size: 50px;
+                        display: none;
+                    }
+
+                    color: white;
+                }
+                a {
+                    text-decoration: none;
+                    color:#9e9e9e;
+                    transition: color 0.4s ease 0.1s;
+                    font-weight: 100;
+                    font-size: 75px;
+                    @media screen and (max-width: 650px) {
+                        font-size: 50px;
+                        
+                    }
+                    @media screen and (max-width: 320px) {
+                        font-size: 40px;
+                        
+                    }
+                    
+                }
+                
+                
+            }
+            li:hover {
+                padding: 0;
+                a {
+                    color: white;
+                    transition: color 0.4s ease;
+                }
+                transition: padding 0.4s ease;
+            }
+            .slide-in {
+                opacity: 0;
+                transform: translateX(-100%);
+            
+            }
         }
+       
     }
-    .slide-right {
-            opacity: 0;
-            transform: translateX(100%);
-           
-        }
 }

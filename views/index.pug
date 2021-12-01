@@ -1,26 +1,28 @@
 extends layout
 
 block head
-    title sus
+    title Jaden Hou
     link(rel="stylesheet", href="./styles/home.css")
     
     script(src="./scripts/onload.js" defer)
 block body
     div.main
-        h1.title.slide-right Jaden Hou
-        h2.subtitle.slide-right phs '25
-        ul.main-list
-                li.slide-in
-                    a(href="/") Home
-                        i.fas.fa-angle-right
-                li.slide-in
-                    a(href="/photos") Photos
-                        i.fas.fa-angle-right
-                li.slide-in
-                    a(href="/projects") Projects 
-                        i.fas.fa-angle-right
+        div.container
+            div.maintop
+                h1.title.slide-right Jaden Hou
+                h2.subtitle.slide-right phs '25
+            ul.main-list
+                    li.slide-in
+                        a(href="/") Home
+                            i.fas.fa-angle-right
+                    li.slide-in
+                        a(href="/photos") Photos
+                            i.fas.fa-angle-right
+                    li.slide-in
+                        a(href="/projects") Projects 
+                            i.fas.fa-angle-right
 
-                li.slide-in
-                    a Resume
-                        i.fas.fa-angle-right     
-        
+                    li.slide-in
+                        a Resume
+                            i.fas.fa-angle-right             
+            

@@ -7,4 +7,8 @@ router.get('/', function(req, res, next) {
 router.get("/photos", function (req, res, next) {
     res.render("photos");
 });
+router.get("/projects", function (req, res, next) {
+    res.sendStatus(200);
+});
+
 module.exports = router;

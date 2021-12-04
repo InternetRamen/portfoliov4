@@ -1,0 +1,38 @@
+.main h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: 300;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease;
+  opacity: 100%;
+}
+
+@media screen and (max-width: 795px) {
+  .main h1 {
+    font-size: 50px;
+  }
+}
+
+.main .subtitle {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: opacity 1s ease, -webkit-transform 1s ease;
+  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1s ease, opacity 1s ease, -webkit-transform 1s ease;
+  opacity: 100%;
+}
+
+@media screen and (max-width: 795px) {
+  .main .subtitle {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=404.css.map */

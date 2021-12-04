@@ -1,0 +1,25 @@
+.main {
+    h1 {
+        color: white;
+        font-size: 100px;
+        font-weight: 300;
+        transform: translateX(0);
+        transition: transform 1s ease, opacity 1s ease;
+        opacity: 100%;
+
+        @media screen and (max-width: 795px) {
+            font-size: 50px;
+        }
+    }
+    .subtitle {
+        color: white;
+        font-size: 30px;
+        font-weight: 300;
+        transform: translateX(0);
+        transition: transform 1s ease, opacity 1s ease;
+        opacity: 100%;
+        @media screen and (max-width: 795px) {
+            font-size: 25px;
+        }
+    }
+}

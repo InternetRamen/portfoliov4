@@ -1,6 +1,10 @@
 let itemList = document.querySelector(".main-list")
 let title = document.querySelector(".title")
 let h2 = document.querySelector(".subtitle")
+
+let nav = document.querySelector(".nav")
+nav.classList.add("home")
+
 function delay(ms) {
     return new Promise(resolve => {
         setTimeout(() => { resolve() }, ms);
@@ -19,3 +23,4 @@ async function a() {
 
 }
 a()
+

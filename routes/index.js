@@ -4,11 +4,11 @@ const router = express.Router();
 router.get('/', function(req, res, next) {
         res.render('index');
 });
-router.get("/photos", function (req, res, next) {
-    res.render("photos");
+router.get("/about", function (req, res, next) {
+    res.render("about");
 });
-router.get("/projects", function (req, res, next) {
-    res.sendStatus(200);
+router.get("/portfolio", function (req, res, next) {
+    res.sendStatus(404);
 });
 
 module.exports = router;

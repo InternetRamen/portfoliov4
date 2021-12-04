@@ -14,6 +14,12 @@ app.use(express.urlencoded({ extended: false }));
 const indexRouter = require("./routes/index")
 app.use("/", indexRouter)
 
+
+app.use((req, res, next) => {
+    res.render("404");
+})
+
+
 let port = 6403
 app.set("port", port);
 

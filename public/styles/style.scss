@@ -21,7 +21,7 @@ body {
     }
     nav {
         height: 5vh;
-        bottom: 0;
+        top: 0;
         position: absolute;
         z-index: 1;
         width: 100%;
@@ -80,5 +80,82 @@ body {
         @media screen and (max-width: 795px) {
             display: none;
         }
+        
     }
+    contact {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        ul {
+            list-style: none;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            li {
+                padding: 0 10px;
+                a,button {
+                    cursor: pointer;
+                    background-color: rgba($color: #000000, $alpha: 0);
+                    border: none;
+                    i {
+                        font-size: 25px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .home {
+            display: none;
+        }
+}
+
+
+.main {
+    height: 100vh;
+    padding: 125px 20%;
+    
+}
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    z-index: 3;
+    height: 100vh;
+    background-color: grey;
+    
+    
+}
+.goOut {
+    transition: all 1s ease;
+    width: 100%;
+}
+.norm {
+    width: 100%;
+    
+}
+.goBack {
+    width: 0;
+    transition: all 1s ease;
 }

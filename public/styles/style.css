@@ -26,7 +26,7 @@ body .top {
 
 body nav {
   height: 5vh;
-  bottom: 0;
+  top: 0;
   position: absolute;
   z-index: 1;
   width: 100%;
@@ -107,5 +107,92 @@ body nav .nav-list li:hover::after {
   body nav {
     display: none;
   }
+}
+
+body contact {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body contact ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body contact ul li {
+  padding: 0 10px;
+}
+
+body contact ul li a, body contact ul li button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+body contact ul li a i, body contact ul li button i {
+  font-size: 25px;
+  color: white;
+}
+
+body .home {
+  display: none;
+}
+
+.main {
+  height: 100vh;
+  padding: 125px 20%;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: 3;
+  height: 100vh;
+  background-color: grey;
+}
+
+.goOut {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 100%;
+}
+
+.norm {
+  width: 100%;
+}
+
+.goBack {
+  width: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 /*# sourceMappingURL=style.css.map */

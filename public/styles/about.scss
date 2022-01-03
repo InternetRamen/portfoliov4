@@ -1,0 +1,20 @@
+.main {
+        h1 {
+            color: white;
+            font-size: 65px;
+            font-weight: 300;
+
+            @media screen and (max-width: 795px) {
+                font-size: 50px;
+            }
+        }
+        .subtitle {
+            color: white;
+            font-size: 25px;
+            font-weight: 300;
+
+            @media screen and (max-width: 795px) {
+                font-size: 20px;
+            }
+        }
+    }

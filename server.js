@@ -19,6 +19,10 @@ app.use((req, res, next) => {
     res.render("404");
 })
 
+app.use(function (err, req, res, next) {
+    res.status(err.status || 500);
+    res.render("404");
+});
 
 let port = 6403
 app.set("port", port);

@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: white;
 }
-html, body {
-    height:100%;
+html,
+body {
+    height: 100%;
 }
 
 body {
     background-color: black;
+
     position: relative;
     .top {
         width: 100%;
-        height: 100vh;
-        position: absolute;
+        
+
         z-index: 0;
     }
     nav {
@@ -38,9 +40,8 @@ body {
             list-style: none;
 
             .active {
-                color: #abfaff
+                color: #abfaff;
             }
-
 
             li {
                 display: inline-flex;
@@ -53,7 +54,7 @@ body {
                     justify-content: center;
                     align-items: center;
                     height: 100%;
-                    color:white;
+                    color: white;
                     text-decoration: none;
                 }
                 position: relative;
@@ -67,25 +68,23 @@ body {
                 position: absolute;
                 transition: all 0.3s ease 0s;
                 bottom: 0;
-                left:50%;
+                left: 50%;
             }
 
             li:hover::after {
                 width: 100%;
                 left: 0;
             }
-
-
         }
         @media screen and (max-width: 795px) {
             display: none;
         }
-        
     }
     contact {
         width: 100%;
-        position: absolute;
-        bottom: 0;
+
+        background-color: black;
+
         height: 5vh;
         display: flex;
         flex-direction: row;
@@ -93,13 +92,14 @@ body {
         align-items: center;
         ul {
             list-style: none;
-            display:flex;
+            display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             li {
                 padding: 0 10px;
-                a,button {
+                a,
+                button {
                     cursor: pointer;
                     background-color: rgba($color: #000000, $alpha: 0);
                     border: none;
@@ -112,50 +112,32 @@ body {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     .home {
-            display: none;
-        }
+        display: none;
+    }
 }
-
 
 .main {
-    height: 100vh;
-    padding: 125px 20%;
     
+    padding: 125px 20%;
 }
 .box {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 0;
     z-index: 3;
     height: 100vh;
     background-color: grey;
-    
-    
 }
 .goOut {
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     width: 100%;
 }
 .norm {
     width: 100%;
-    
 }
 .goBack {
     width: 0;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }

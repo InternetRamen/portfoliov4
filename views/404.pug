@@ -1,7 +1,9 @@
 extends layout 
 block head
     link(rel="stylesheet", href="./styles/404.css")
+    
 block body
     div.main
-        h1.title 404 Not Found 
-        h2.subtitle Hmm... did you type something wrong? Did I send you the wrong link?
+        svg.mid(viewbox="0 0 100 100", xmlns="http://www.w3.org/2000/svg")
+            circle.stroke-1(cx="50%", cy="50%", r="40")
+            text.title(x="50%", y="50%", dominant-baseline="middle", text-anchor="middle") 404

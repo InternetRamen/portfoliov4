@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-/* GET home page. */
+const createError = require("http-errors")
+
 router.get('/', function(req, res, next) {
         res.render('index');
 });
@@ -8,7 +9,7 @@ router.get("/about", function (req, res, next) {
     res.render("about");
 });
 router.get("/portfolio", function (req, res, next) {
-    res.sendStatus(404);
+    next(createError(404))
 });
 
 module.exports = router;

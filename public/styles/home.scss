@@ -1,5 +1,5 @@
 .main {
-
+    height: 100vh;
     
     .container {
         position: relative;
@@ -109,4 +109,8 @@
         }
        
     }
+}
+contact {
+    position: absolute;
+    bottom: 0;
 }

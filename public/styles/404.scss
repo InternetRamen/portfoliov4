@@ -1,3 +1,11 @@
+body {
+    background-image: url("/assets/cat.jpg");
+    background-size: cover;
+    background-position: center;
+    @media screen and (max-width: 1023px) {
+        background-image: url("/assets/cat2.jpg");
+    }
+}
 .main {
     // h1 {
     //     color: white;
@@ -27,21 +35,42 @@
     align-items: center;
     justify-content: center;
     .mid {
-        --box-dem: 300px;
+        --box-dem: 400px;
 
         height: var(--box-dem);
         width: var(--box-dem);
         .stroke-1 {
             stroke: #5cf5fa;
-            stroke-dasharray: calc(252 / 4);
-            stroke-dashoffset: 1;
-            animation: stroke1 4s infinite;
+            stroke-dasharray: calc(3.1415 * 35 * 2 / 4);
+            stroke-dashoffset: 0;
+            animation: stroke1 5s ease-in-out infinite -0.3s;
+            fill: rgba($color: #000000, $alpha: 0);
         }
+        // .stroke-2 {
+        //     stroke: #5c89fa;
+
+        //     stroke-dasharray: calc(3.1415 * 40 * 2 /4);
+        //     stroke-dashoffset: -5;
+        //     animation: stroke1 5s ease-in-out infinite -0.15s;
+        // }
+        // .stroke-3 {
+        //     stroke: #645cfa;
+
+        //     stroke-dasharray: calc(3.1415 * 45 * 2 /4);
+        //     stroke-dashoffset: -5;
+        //     animation: stroke1 5s ease-in-out infinite;
+        // }
 
         .title {
-            font-weight: 100;
-            font-size: 24pt;
+            font-weight: 300;
+            font-size: 20pt;
             line-height: 95%;
+            fill: white;
+        }
+        .subtitle {
+            font-weight: normal;
+            font-size: 4pt;
+
             fill: white;
         }
     }
@@ -53,12 +82,12 @@ contact {
 
 @keyframes stroke1 {
     0% {
-        stroke-dashoffset: 1;
+        stroke-dashoffset: 0;
     }
     50% {
-        stroke-dashoffset: 200;
+        stroke-dashoffset: 250;
     }
     100% {
-        stroke-dashoffset: 1;
+        stroke-dashoffset: 0;
     }
 }

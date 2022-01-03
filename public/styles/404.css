@@ -1,3 +1,15 @@
+body {
+  background-image: url("/assets/cat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    background-image: url("/assets/cat2.jpg");
+  }
+}
+
 .main {
   min-height: 100vh;
   display: -webkit-box;
@@ -12,23 +24,30 @@
 }
 
 .main .mid {
-  --box-dem: 300px;
+  --box-dem: 400px;
   height: var(--box-dem);
   width: var(--box-dem);
 }
 
 .main .mid .stroke-1 {
   stroke: #5cf5fa;
-  stroke-dasharray: calc(252 / 4);
-  stroke-dashoffset: 1;
-  -webkit-animation: stroke1 4s infinite;
-          animation: stroke1 4s infinite;
+  stroke-dasharray: calc(3.1415 * 35 * 2 / 4);
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke1 5s ease-in-out infinite -0.3s;
+          animation: stroke1 5s ease-in-out infinite -0.3s;
+  fill: rgba(0, 0, 0, 0);
 }
 
 .main .mid .title {
-  font-weight: 100;
-  font-size: 24pt;
+  font-weight: 300;
+  font-size: 20pt;
   line-height: 95%;
+  fill: white;
+}
+
+.main .mid .subtitle {
+  font-weight: normal;
+  font-size: 4pt;
   fill: white;
 }
 
@@ -39,25 +58,25 @@ contact {
 
 @-webkit-keyframes stroke1 {
   0% {
-    stroke-dashoffset: 1;
+    stroke-dashoffset: 0;
   }
   50% {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 250;
   }
   100% {
-    stroke-dashoffset: 1;
+    stroke-dashoffset: 0;
   }
 }
 
 @keyframes stroke1 {
   0% {
-    stroke-dashoffset: 1;
+    stroke-dashoffset: 0;
   }
   50% {
-    stroke-dashoffset: 200;
+    stroke-dashoffset: 250;
   }
   100% {
-    stroke-dashoffset: 1;
+    stroke-dashoffset: 0;
   }
 }
 /*# sourceMappingURL=404.css.map */

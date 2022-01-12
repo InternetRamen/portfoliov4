@@ -9,7 +9,7 @@ router.get("/about", function (req, res, next) {
     res.render("about");
 });
 router.get("/portfolio", function (req, res, next) {
-    next(createError(404))
+    res.render("portfolio")
 });
 
 module.exports = router;

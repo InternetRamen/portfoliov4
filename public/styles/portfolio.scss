@@ -1,0 +1,54 @@
+.main {
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+    gap: 50px;
+    .column {
+        flex: 1 1 400px;
+        flex-direction: column;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+       background-color: black;
+        .title {
+            font-size: 35pt;
+            @media screen and (max-width: 500px) {
+                font-size: 24pt;
+            }
+        }
+    }
+    .column:hover::after {
+        height: calc(50% + 8px);
+        width: calc(100% + 8px);
+        transition: width 0.3s ease, height 0.3s ease 0.3s;
+    }
+    .column::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        z-index: -3;
+        background-color: white;
+        height: 4px;
+        width: 0;
+        transition: width 0.3s ease 0.3s, height 0.3s ease;
+    }
+    .column:hover::before {
+        height: calc(50% + 8px);
+        width: calc(100% + 8px);
+        transition: width 0.3s ease, height 0.3s ease 0.3s;
+    }
+    .column::before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        z-index: -3;
+        background-color: white;
+        height: 4px;
+        width: 0;
+        transition: width 0.3s ease 0.3s, height 0.3s ease;
+    }
+}

@@ -1,0 +1,13 @@
+extends layout 
+block head
+    title Portfolio | Jaden Hou
+    link(rel="stylesheet", href="./styles/portfolio.css")
+block body
+    div.main
+        div.column(onclick="location.href='#programming'")
+            p.title Programming 
+                i(class="fas fa-mouse")
+        
+        div.column(onclick="location.href='#photography'")
+            p.title Photography 
+                 i(class="fas fa-mouse")

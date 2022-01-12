@@ -1,3 +1,14 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
 .main h1 {
   color: white;
   font-size: 65px;
@@ -20,5 +31,48 @@
   .main .subtitle {
     font-size: 20px;
   }
+}
+
+.main .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .skills .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+}
+
+.main .skills .col .sub2 {
+  font-size: 30pt;
+}
+
+.main .skills .col ul {
+  list-style: none;
+}
+
+.main .skills .col ul li {
+  font-size: 15pt;
+}
+
+.main .packages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 300px;
+}
+
+.main .packages h1 {
+  font-size: 24pt;
+}
+
+.main .packages ul {
+  list-style: none;
+}
+
+.main .packages ul li {
+  font-size: 15pt;
 }
 /*# sourceMappingURL=about.css.map */

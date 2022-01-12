@@ -1,4 +1,7 @@
 .main {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
         h1 {
             color: white;
             font-size: 65px;
@@ -16,5 +19,33 @@
             @media screen and (max-width: 795px) {
                 font-size: 20px;
             }
+        }
+        .skills {
+            display: flex;
+            .col {
+                flex: 1 0 200px;
+                .sub2 {
+                    font-size: 30pt;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        font-size: 15pt;
+                    }
+                }
+            }
+        }
+        .packages {
+            display: flex;
+            min-height: 300px;
+            h1 {
+                font-size: 24pt;
+            }
+            ul {
+                    list-style: none;
+                    li {
+                        font-size: 15pt;
+                    }
+                }
         }
     }

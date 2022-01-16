@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@master
+        with:
+          host: cloud.libraryofcode.org
+          username: internetramen
+          key: ${{ secrets.PASS }}
+          port: 22
+          script: |
+            whoami

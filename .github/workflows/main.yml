@@ -11,7 +11,7 @@ jobs:
         with:
           host: cloud.libraryofcode.org
           username: internetramen
-          password: ${{ secrets.PASS }}
+          key: ${{ secrets.KEY }}
           script: |
             whoami
             ls

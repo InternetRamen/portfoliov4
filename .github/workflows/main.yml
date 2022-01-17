@@ -13,5 +13,8 @@ jobs:
           username: internetramen
           key: ${{ secrets.KEY }}
           script: |
-            whoami
-            ls
+            cd Documents
+            git pull
+            npm ci
+            pm2 restart website
+            

@@ -64,15 +64,21 @@
   min-height: 300px;
 }
 
-.main .packages h1 {
+.main .packages .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+}
+
+.main .packages .col h1 {
   font-size: 24pt;
 }
 
-.main .packages ul {
+.main .packages .col ul {
   list-style: none;
 }
 
-.main .packages ul li {
+.main .packages .col ul li {
   font-size: 15pt;
 }
 /*# sourceMappingURL=about.css.map */

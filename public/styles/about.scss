@@ -1,51 +1,54 @@
 .main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h1 {
+        color: white;
+        font-size: 65px;
+        font-weight: 300;
+
+        @media screen and (max-width: 795px) {
+            font-size: 50px;
+        }
+    }
+    .subtitle {
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+
+        @media screen and (max-width: 795px) {
+            font-size: 20px;
+        }
+    }
+    .skills {
         display: flex;
-        flex-direction: column;
-        gap: 15px;
-        h1 {
-            color: white;
-            font-size: 65px;
-            font-weight: 300;
-
-            @media screen and (max-width: 795px) {
-                font-size: 50px;
+        .col {
+            flex: 1 0 200px;
+            .sub2 {
+                font-size: 30pt;
             }
-        }
-        .subtitle {
-            color: white;
-            font-size: 25px;
-            font-weight: 300;
-
-            @media screen and (max-width: 795px) {
-                font-size: 20px;
-            }
-        }
-        .skills {
-            display: flex;
-            .col {
-                flex: 1 0 200px;
-                .sub2 {
-                    font-size: 30pt;
-                }
-                ul {
-                    list-style: none;
-                    li {
-                        font-size: 15pt;
-                    }
+            ul {
+                list-style: none;
+                li {
+                    font-size: 15pt;
                 }
             }
         }
-        .packages {
-            display: flex;
-            min-height: 300px;
+    }
+    .packages {
+        display: flex;
+        min-height: 300px;
+        .col {
+            flex: 1 0 200px;
             h1 {
                 font-size: 24pt;
             }
             ul {
-                    list-style: none;
-                    li {
-                        font-size: 15pt;
-                    }
+                list-style: none;
+                li {
+                    font-size: 15pt;
                 }
+            }
         }
     }
+}

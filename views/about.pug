@@ -1,8 +1,8 @@
 extends layout 
 block head
     title About | Jaden Hou
-    link(rel="stylesheet", href="./styles/normpage.css")
-    link(rel="stylesheet", href="./styles/about.css")
+    link(rel="stylesheet" href="./styles/normpage.css")
+    link(rel="stylesheet" href="./styles/about.css")
 block body
     div.main
         h1.title About Me
@@ -29,10 +29,15 @@ block body
                     li PM2 
                     li Cloudflare 
         div.packages
-            h1.sub3 NPM Packages 
+            div.col
+                h1.sub3 NPM Packages 
                 ul
                     li ExpressJS 
                     li DiscordJS 
                     li Pug
                     li FS
                     li Apollo Server
+            div.col
+                h1.sub3 Databases
+                ul
+                    li Firebase Cloud Firestore

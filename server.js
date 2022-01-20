@@ -13,6 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 
 const indexRouter = require("./routes/index")
 app.use("/", indexRouter)
+const portfolioRouter = require("./routes/portfolio");
+app.use("/portfolio", portfolioRouter);
 
 
 app.use((req, res, next) => {

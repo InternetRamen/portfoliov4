@@ -1,0 +1,38 @@
+doctype html 
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        script(src="https://kit.fontawesome.com/f18b49da90.js", crossorigin="anonymous") 
+        link(rel="stylesheet", href="../styles/style.css")
+        link(rel="icon", href="../assets/bigtransparentpfp.png")
+        script(src="../scripts/main.js" defer)
+        block head
+    body
+        div.box
+        nav.nav
+            ul.nav-list
+                li
+                    a(href="/") Home
+                li
+                    a(href="/about") About
+                li
+                    a(href="/portfolio") Portfolio 
+                li
+                    a Resume
+        div.top
+            block body
+        contact
+            ul.contact-list
+                li
+                    a(href="mailto:jadenhou19@gmail.com", target="_blank")
+                        i.fas.fa-envelope
+                li
+                    a(href="https://github.com/InternetRamen", target="_blank")
+                        i.fab.fa-github
+                li
+                    a(href="https://www.instagram.com/houjaden/", target="_blank")
+                        i.fab.fa-instagram
+                li
+                    button(onclick="alert(\"I don't have a linked in :(\")")
+                        i.fab.fa-linkedin

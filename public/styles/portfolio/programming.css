@@ -1,0 +1,31 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 95vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.main details {
+  width: 80%;
+  padding: 20px;
+  border: solid 1px white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.main details summary {
+  font-size: 18pt;
+}
+
+.main details p {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=programming.css.map */

@@ -13,7 +13,7 @@ jobs:
           username: internetramen
           key: ${{ secrets.KEY }}
           script: |
-            cd Documents
+            cd portfoliov4
             git pull
             npm ci
             pm2 restart website

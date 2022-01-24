@@ -33,52 +33,70 @@
   }
 }
 
-.main .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.main .sub {
+  font-size: 35pt;
+  font-weight: 300;
 }
 
-.main .skills .col {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 200px;
-          flex: 1 0 200px;
+.main .sub hr {
+  margin: 5px 0;
 }
 
-.main .skills .col .sub2 {
+.main .sub2 {
   font-size: 30pt;
 }
 
-.main .skills .col ul {
+.main ul {
   list-style: none;
 }
 
-.main .skills .col ul li {
+.main ul li {
   font-size: 15pt;
 }
 
-.main .packages {
+.main .specs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.main .packages .col {
+.main .specs .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .specs .skills .col {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 200px;
           flex: 1 0 200px;
 }
 
-.main .packages .col h1 {
+.main .specs .packages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .specs .packages .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+}
+
+.main .specs .packages .col h1 {
   font-size: 24pt;
 }
 
-.main .packages .col ul {
+.main .specs .packages .col ul {
   list-style: none;
 }
 
-.main .packages .col ul li {
+.main .specs .packages .col ul li {
   font-size: 15pt;
 }
 /*# sourceMappingURL=about.css.map */

@@ -4,7 +4,7 @@
     height: 95vh;
     align-items: center;
     gap: 30px;
-    details { 
+    details {
         width: 80%;
         padding: 20px;
         border: solid 1px white;
@@ -12,12 +12,13 @@
         overflow: hidden;
         summary {
             font-size: 18pt;
-
         }
-        
+
         p {
             margin-top: 15px;
-            
+        }
+        ul {
+            list-style: inside;
         }
     }
 }

@@ -28,4 +28,8 @@
 .main details p {
   margin-top: 15px;
 }
+
+.main details ul {
+  list-style: inside;
+}
 /*# sourceMappingURL=programming.css.map */

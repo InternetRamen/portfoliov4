@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 95vh;
+  min-height: 95vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -18,7 +18,6 @@
   padding: 20px;
   border: solid 1px white;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .main details summary {
@@ -31,5 +30,9 @@
 
 .main details ul {
   list-style: inside;
+}
+
+.main details ul li a {
+  overflow-wrap: break-word;
 }
 /*# sourceMappingURL=programming.css.map */

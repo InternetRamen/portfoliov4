@@ -68,6 +68,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main .specs .skills .col {
@@ -80,6 +82,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main .specs .packages .col {
@@ -98,5 +102,19 @@
 
 .main .specs .packages .col ul li {
   font-size: 15pt;
+}
+
+.main .workstation .cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .workstation .cols div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
 }
 /*# sourceMappingURL=about.css.map */

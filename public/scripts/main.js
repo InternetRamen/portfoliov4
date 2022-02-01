@@ -11,6 +11,12 @@ if (search.get("fromPage")) {
 }
 
 
+let hamburg = document.querySelector(".hamburger");
+let menu = document.querySelector(".nav-list");
+function a() {
+    hamburg.classList.toggle("is-active");
+    menu.classList.toggle("active");
+}
 
 document.querySelectorAll(".a").forEach((element) => {
     element.addEventListener(

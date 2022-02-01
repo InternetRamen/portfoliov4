@@ -6,11 +6,11 @@ html(lang="en")
         script(src="https://kit.fontawesome.com/f18b49da90.js", crossorigin="anonymous") 
         link(rel="stylesheet", href="./styles/style.css")
         link(rel="icon", href="./assets/bigtransparentpfp.png")
+        link(rel="stylesheet", href="./styles/hamburgers.css")
         script(src="./scripts/main.js" defer)
         block head
     body
-        div.box
-        nav.nav
+        nav.nav 
             ul.nav-list
                 li
                     a(href="/") Home
@@ -20,6 +20,9 @@ html(lang="en")
                     a(href="/portfolio") Portfolio 
                 li
                     a Resume
+            button.hamburger.hamburger--slider(type="button", onclick="a()")
+                span.hamburger-box 
+                    span.hamburger-inner
         div.top
             block body
         contact

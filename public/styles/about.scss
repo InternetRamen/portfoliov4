@@ -28,28 +28,30 @@
         }
     }
     .sub2 {
-                    font-size: 30pt;
-                }
-                ul {
-                    list-style: none;
-                    li {
-                        font-size: 15pt;
-                    }
-                }
+        font-size: 30pt;
+    }
+    ul {
+        list-style: none;
+        li {
+            font-size: 15pt;
+        }
+    }
     .specs {
         display: flex;
         flex-direction: column;
-
+       
         .skills {
+               
             display: flex;
+            flex-wrap: wrap;
             .col {
+             
                 flex: 1 0 200px;
-                
             }
         }
         .packages {
             display: flex;
-            
+            flex-wrap: wrap;
             .col {
                 flex: 1 0 200px;
                 h1 {
@@ -61,6 +63,16 @@
                         font-size: 15pt;
                     }
                 }
+            }
+        }
+    }
+    .workstation {
+        
+        .cols {
+            display: flex;
+            flex-wrap: wrap;
+            div {
+                flex: 1 0 200px;
             }
         }
     }

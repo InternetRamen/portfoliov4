@@ -23,88 +23,237 @@ body .top {
   z-index: 0;
 }
 
-body nav {
-  height: 5vh;
-  top: 0;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
-}
-
-body nav .nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: white;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  list-style: none;
-}
-
-body nav .nav-list .active {
-  color: #abfaff;
-}
-
-body nav .nav-list li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0px 20px;
-  height: 100%;
-  cursor: pointer;
-  position: relative;
-}
-
-body nav .nav-list li a {
-  font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  color: white;
-  text-decoration: none;
-}
-
-body nav .nav-list li::after {
-  content: "";
-  height: 2px;
-  width: 0;
-  background-color: white;
-  position: absolute;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  bottom: 0;
-  left: 50%;
-}
-
-body nav .nav-list li:hover::after {
-  width: 100%;
-  left: 0;
+@media screen and (min-width: 796px) {
+  body nav {
+    height: 5vh;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  body nav .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    list-style: none;
+  }
+  body nav .nav-list .active {
+    color: #abfaff;
+  }
+  body nav .nav-list li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0px 20px;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+  body nav .nav-list li a {
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+  }
+  body nav .nav-list li::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    bottom: 0;
+    left: 50%;
+  }
+  body nav .nav-list li:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  body nav .hamburger {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 795px) {
   body nav {
-    display: none;
+    position: relative;
+    height: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+    /*
+   * Slider
+   */
+  }
+  body nav .nav-list {
+    height: 100vh;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    list-style: none;
+    z-index: 4;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  body nav .nav-list a {
+    text-decoration: none;
+    font-size: 25pt;
+  }
+  body nav .nav-list a {
+    color: black;
+  }
+  body nav .active {
+    width: 300px;
+  }
+  body nav .hamburger {
+    z-index: 6;
+    position: absolute;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  body nav .hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-property: opacity, -webkit-filter;
+    transition-property: opacity, -webkit-filter;
+    transition-property: opacity, filter;
+    transition-property: opacity, filter, -webkit-filter;
+    -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+  }
+  body nav .hamburger:hover {
+    opacity: 0.7;
+  }
+  body nav .hamburger.is-active:hover {
+    opacity: 0.7;
+  }
+  body nav .hamburger.is-active .hamburger-inner,
+  body nav .hamburger.is-active .hamburger-inner::before,
+  body nav .hamburger.is-active .hamburger-inner::after {
+    background-color: black;
+  }
+  body nav .hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+  body nav .hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+  }
+  body nav .hamburger-inner, body nav .hamburger-inner::before, body nav .hamburger-inner::after {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+  }
+  body nav .hamburger-inner::before, body nav .hamburger-inner::after {
+    content: "";
+    display: block;
+  }
+  body nav .hamburger-inner::before {
+    top: -10px;
+  }
+  body nav .hamburger-inner::after {
+    bottom: -10px;
+  }
+  body nav .hamburger--slider .hamburger-inner {
+    top: 2px;
+  }
+  body nav .hamburger--slider .hamburger-inner::before {
+    top: 10px;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+  }
+  body nav .hamburger--slider .hamburger-inner::after {
+    top: 20px;
+  }
+  body nav .hamburger--slider.is-active .hamburger-inner {
+    -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+            transform: translate3d(0, 10px, 0) rotate(45deg);
+  }
+  body nav .hamburger--slider.is-active .hamburger-inner::before {
+    -webkit-transform: rotate(-45deg) translate3d(-4.28571px, -6px, 0);
+            transform: rotate(-45deg) translate3d(-4.28571px, -6px, 0);
+    opacity: 0;
+  }
+  body nav .hamburger--slider.is-active .hamburger-inner::after {
+    -webkit-transform: translate3d(0, -20px, 0) rotate(-90deg);
+            transform: translate3d(0, -20px, 0) rotate(-90deg);
   }
 }
 

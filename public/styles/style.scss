@@ -17,69 +17,111 @@ body {
     position: relative;
     .top {
         width: 100%;
-        
 
         z-index: 0;
     }
     nav {
-        height: 5vh;
-        top: 0;
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        .nav-list {
+        @media screen and (min-width: 796px) {
+            height: 5vh;
+            top: 0;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
             display: flex;
-            color: white;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            height: 100%;
-            list-style: none;
-
-            .active {
-                color: #abfaff;
-            }
-
-            li {
-                display: inline-flex;
-                padding: 0px 20px;
+            overflow: hidden;
+            .nav-list {
+                display: flex;
+                color: white;
+                justify-content: space-around;
+                align-items: center;
                 height: 100%;
-                cursor: pointer;
-                a {
-                    font-size: 20px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
-                    color: white;
-                    text-decoration: none;
+                list-style: none;
+
+                .active {
+                    color: #abfaff;
                 }
-                position: relative;
-            }
 
-            li::after {
-                content: "";
-                height: 2px;
-                width: 0;
-                background-color: white;
-                position: absolute;
-                transition: all 0.3s ease 0s;
-                bottom: 0;
-                left: 50%;
-            }
+                li {
+                    display: inline-flex;
+                    padding: 0px 20px;
+                    height: 100%;
+                    cursor: pointer;
+                    a {
+                        font-size: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        color: white;
+                        text-decoration: none;
+                    }
+                    position: relative;
+                }
 
-            li:hover::after {
-                width: 100%;
-                left: 0;
+                li::after {
+                    content: "";
+                    height: 2px;
+                    width: 0;
+                    background-color: white;
+                    position: absolute;
+                    transition: all 0.3s ease 0s;
+                    bottom: 0;
+                    left: 50%;
+                }
+
+                li:hover::after {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+            .hamburger {
+                display: none;
             }
         }
         @media screen and (max-width: 795px) {
-            display: none;
+            position: relative;
+            height: 5vh;
+            display: flex;
+            .nav-list {
+                height: 100vh;
+                width: 0;
+                background-color: white;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    font-size: 25pt;
+                }
+                z-index: 4;
+                a {
+                    color: black;
+                }
+                transition: all 0.3s ease;
+            }
+            .active {
+                width: 300px;
+                
+            }
+
+          
+            .hamburger {
+                z-index: 6;
+                position: absolute;
+               transition: all 0.3s ease;
+            }
+  $hamburger-layer-color: white;
+            $hamburger-active-layer-color: black;
+            $hamburger-layer-width: 30px;
+            @import "hamburgers/hamburgers";
         }
     }
+
     contact {
         width: 100%;
 
@@ -118,9 +160,7 @@ body {
 }
 
 .main {
-    
     padding: 125px 20%;
-    
 }
 .box {
     position: fixed;

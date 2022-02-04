@@ -103,7 +103,7 @@ body .top {
 
 @media screen and (max-width: 795px) {
   body nav {
-    position: relative;
+    position: fixed;
     height: 5vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -138,6 +138,7 @@ body .top {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     list-style: none;
+    overflow-x: hidden;
     z-index: 4;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -323,7 +324,7 @@ body .home {
   top: 0;
   left: 0;
   width: 0;
-  z-index: 3;
+  z-index: 10;
   height: 100vh;
   background-color: grey;
 }

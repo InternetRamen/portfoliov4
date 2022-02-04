@@ -81,7 +81,7 @@ body {
             }
         }
         @media screen and (max-width: 795px) {
-            position: relative;
+            position: fixed;
             height: 5vh;
             display: flex;
             .nav-list {
@@ -94,6 +94,7 @@ body {
                 align-items: center;
                 justify-content: space-evenly;
                 list-style: none;
+                overflow-x: hidden;
                 a {
                     text-decoration: none;
                     font-size: 25pt;
@@ -167,7 +168,7 @@ body {
     top: 0;
     left: 0;
     width: 0;
-    z-index: 3;
+    z-index: 10;
     height: 100vh;
     background-color: grey;
 }

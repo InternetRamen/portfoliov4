@@ -1,0 +1,45 @@
+.top {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    .main {
+        min-height: 80vh;
+        margin: 10vh 0;
+
+        padding: 0;
+        width: 80%;
+        display: grid;
+       grid-template-columns: repeat(24, 1fr);
+        @media screen and (min-width: 796px) {
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        grid-auto-flow: dense;
+        gap: 10px;
+
+        .item {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            
+        }
+        .a4by3 {
+            grid-column: span 4;
+            grid-row: span 3;
+            aspect-ratio: 4 / 3;
+        }
+        .a3by4 {
+            grid-column: span 3;
+            grid-row: span 4;
+            aspect-ratio:  3 / 4;
+        }
+        .a1by1 {
+            grid-column: span 2;
+            grid-row: span 2;
+            aspect-ratio:  1 i/ 1;
+        }
+    }
+}

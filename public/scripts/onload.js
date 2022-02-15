@@ -13,8 +13,8 @@ function delay(ms) {
 async function a() {
     await delay(300);
     title.classList.remove("slide-right")
-    await delay(200);
-    h2.classList.remove("slide-right");
+    // await delay(200);
+    // h2.classList.remove("slide-right");
     await delay(200);
     for (let item of itemList.children) {
         await delay(100)
